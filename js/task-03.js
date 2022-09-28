@@ -19,6 +19,7 @@ const markup = images
   .map((image) => `<li><img src="${image.url}" alt="${image.alt}"></li>`)
   .join("");
 ulElement.insertAdjacentHTML('afterbegin', markup);
-console.log(ulElement);
+ulElement.setAttribute('style', 'display: flex;');
+console.log(ulElement.children);
 
 
